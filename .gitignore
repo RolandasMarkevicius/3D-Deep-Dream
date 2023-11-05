@@ -3,6 +3,9 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# RM ignore
+*.pth
+
 # C extensions
 *.so
 
