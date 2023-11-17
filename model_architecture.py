@@ -1,6 +1,12 @@
 from torch import nn
 from torch.utils.data import DataLoader, Dataset
 from torchvision import transforms
+from utils import conv_arithmetic
+
+# Convolutional arithmetic
+conv_arithmetic(input=32, kernel=5, stride=2, padding=0, dilation=0) # out 16
+conv_arithmetic(input=16, kernel=5, stride=2, padding=0, dilation=0) # out 8
+conv_arithmetic(input=8, kernel=5, stride=2, padding=0, dilation=0) # out 4
 
 # Model architecture
 class LinearWood(nn.Module):
